@@ -138,7 +138,7 @@ type Msg
 
 
 type MdlMsg
-    = SubmitMld Button.Msg
+    = SubmitMdl Button.Msg
     | UserDataMdl DataChangeMdl
 
 
@@ -203,7 +203,7 @@ update msg ({ mdl } as model) =
 
         Mdl mdlMsg ->
             case mdlMsg of
-                SubmitMld cMsg ->
+                SubmitMdl cMsg ->
                     let
                         ( newSubmit, cmd ) =
                             Button.update cMsg mdl.submit
@@ -211,7 +211,7 @@ update msg ({ mdl } as model) =
                         newMdl =
                             { mdl | submit = newSubmit }
                     in
-                        ( { model | mdl = newMdl }, Cmd.map (Mdl << SubmitMld) cmd )
+                        ( { model | mdl = newMdl }, Cmd.map (Mdl << SubmitMdl) cmd )
 
                 UserDataMdl cMsg ->
                     let
@@ -359,7 +359,7 @@ view model =
                 [ text "Premium Package" ]
 
         submit =
-            Button.view (Mdl << SubmitMld)
+            Button.view (Mdl << SubmitMdl)
                 model.mdl.submit
                 [ Button.colored
                 , Button.raised

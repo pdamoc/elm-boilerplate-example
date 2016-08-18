@@ -10826,8 +10826,8 @@ var _user$project$WithoutParts$UserDataChanged = function (a) {
 var _user$project$WithoutParts$UserDataMdl = function (a) {
 	return {ctor: 'UserDataMdl', _0: a};
 };
-var _user$project$WithoutParts$SubmitMld = function (a) {
-	return {ctor: 'SubmitMld', _0: a};
+var _user$project$WithoutParts$SubmitMdl = function (a) {
+	return {ctor: 'SubmitMdl', _0: a};
 };
 var _user$project$WithoutParts$PremiumMdl = function (a) {
 	return {ctor: 'PremiumMdl', _0: a};
@@ -10961,7 +10961,7 @@ var _user$project$WithoutParts$update = F2(
 				return {ctor: '_Tuple2', _0: _p12, _1: _elm_lang$core$Platform_Cmd$none};
 			default:
 				var _p6 = _p5._0;
-				if (_p6.ctor === 'SubmitMld') {
+				if (_p6.ctor === 'SubmitMdl') {
 					var _p7 = A2(_debois$elm_mdl$Material_Button$update, _p6._0, _p11.submit);
 					var newSubmit = _p7._0;
 					var cmd = _p7._1;
@@ -10977,7 +10977,7 @@ var _user$project$WithoutParts$update = F2(
 							_elm_lang$core$Platform_Cmd$map,
 							function (_p8) {
 								return _user$project$WithoutParts$Mdl(
-									_user$project$WithoutParts$SubmitMld(_p8));
+									_user$project$WithoutParts$SubmitMdl(_p8));
 							},
 							cmd)
 					};
@@ -11036,7 +11036,7 @@ var _user$project$WithoutParts$view = function (model) {
 		_debois$elm_mdl$Material_Button$view,
 		function (_p13) {
 			return _user$project$WithoutParts$Mdl(
-				_user$project$WithoutParts$SubmitMld(_p13));
+				_user$project$WithoutParts$SubmitMdl(_p13));
 		},
 		model.mdl.submit,
 		_elm_lang$core$Native_List.fromArray(
