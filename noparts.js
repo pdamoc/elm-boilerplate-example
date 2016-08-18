@@ -10837,84 +10837,93 @@ var _user$project$WithoutParts$updateUserDataMdl = F2(
 		var _p1 = msg;
 		switch (_p1.ctor) {
 			case 'FullNameMdl':
-				var newChildModel = A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.fullName);
 				return {
 					ctor: '_Tuple2',
 					_0: _elm_lang$core$Native_Utils.update(
 						user,
-						{fullName: newChildModel}),
+						{
+							fullName: A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.fullName)
+						}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
 			case 'CompanyMdl':
-				var newChildModel = A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.company);
 				return {
 					ctor: '_Tuple2',
 					_0: _elm_lang$core$Native_Utils.update(
 						user,
-						{company: newChildModel}),
+						{
+							company: A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.company)
+						}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
 			case 'EmailMdl':
-				var newChildModel = A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.email);
 				return {
 					ctor: '_Tuple2',
 					_0: _elm_lang$core$Native_Utils.update(
 						user,
-						{email: newChildModel}),
+						{
+							email: A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.email)
+						}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
 			case 'TelephoneMdl':
-				var newChildModel = A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.phone);
 				return {
 					ctor: '_Tuple2',
 					_0: _elm_lang$core$Native_Utils.update(
 						user,
-						{phone: newChildModel}),
+						{
+							phone: A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.phone)
+						}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
 			case 'AddressLine1Mdl':
-				var newChildModel = A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.addressLine1);
 				return {
 					ctor: '_Tuple2',
 					_0: _elm_lang$core$Native_Utils.update(
 						user,
-						{addressLine1: newChildModel}),
+						{
+							addressLine1: A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.addressLine1)
+						}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
 			case 'AddressLine2Mdl':
-				var newChildModel = A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.addressLine2);
 				return {
 					ctor: '_Tuple2',
 					_0: _elm_lang$core$Native_Utils.update(
 						user,
-						{addressLine2: newChildModel}),
+						{
+							addressLine2: A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.addressLine2)
+						}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
 			case 'CityMdl':
-				var newChildModel = A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.city);
 				return {
 					ctor: '_Tuple2',
 					_0: _elm_lang$core$Native_Utils.update(
 						user,
-						{city: newChildModel}),
+						{
+							city: A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.city)
+						}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
 			case 'StateMdl':
-				var newChildModel = A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.state);
 				return {
 					ctor: '_Tuple2',
 					_0: _elm_lang$core$Native_Utils.update(
 						user,
-						{state: newChildModel}),
+						{
+							state: A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.state)
+						}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
 			case 'CountryMdl':
-				var newChildModel = A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.country);
 				return {
 					ctor: '_Tuple2',
 					_0: _elm_lang$core$Native_Utils.update(
 						user,
-						{country: newChildModel}),
+						{
+							country: A2(_debois$elm_mdl$Material_Textfield$update, _p1._0, user.country)
+						}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
 			default:
