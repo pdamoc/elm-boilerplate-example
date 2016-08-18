@@ -228,67 +228,31 @@ updateUserDataMdl : DataChangeMdl -> UserDataModels -> ( UserDataModels, Cmd Dat
 updateUserDataMdl msg user =
     case msg of
         FullNameMdl cMsg ->
-            let
-                newChildModel =
-                    Textfield.update cMsg user.fullName
-            in
-                ( { user | fullName = newChildModel }, Cmd.none )
+            ( { user | fullName = (Textfield.update cMsg user.fullName) }, Cmd.none )
 
         CompanyMdl cMsg ->
-            let
-                newChildModel =
-                    Textfield.update cMsg user.company
-            in
-                ( { user | company = newChildModel }, Cmd.none )
+            ( { user | company = (Textfield.update cMsg user.company) }, Cmd.none )
 
         EmailMdl cMsg ->
-            let
-                newChildModel =
-                    Textfield.update cMsg user.email
-            in
-                ( { user | email = newChildModel }, Cmd.none )
+            ( { user | email = (Textfield.update cMsg user.email) }, Cmd.none )
 
         TelephoneMdl cMsg ->
-            let
-                newChildModel =
-                    Textfield.update cMsg user.phone
-            in
-                ( { user | phone = newChildModel }, Cmd.none )
+            ( { user | phone = (Textfield.update cMsg user.phone) }, Cmd.none )
 
         AddressLine1Mdl cMsg ->
-            let
-                newChildModel =
-                    Textfield.update cMsg user.addressLine1
-            in
-                ( { user | addressLine1 = newChildModel }, Cmd.none )
+            ( { user | addressLine1 = (Textfield.update cMsg user.addressLine1) }, Cmd.none )
 
         AddressLine2Mdl cMsg ->
-            let
-                newChildModel =
-                    Textfield.update cMsg user.addressLine2
-            in
-                ( { user | addressLine2 = newChildModel }, Cmd.none )
+            ( { user | addressLine2 = (Textfield.update cMsg user.addressLine2) }, Cmd.none )
 
         CityMdl cMsg ->
-            let
-                newChildModel =
-                    Textfield.update cMsg user.city
-            in
-                ( { user | city = newChildModel }, Cmd.none )
+            ( { user | city = (Textfield.update cMsg user.city) }, Cmd.none )
 
         StateMdl cMsg ->
-            let
-                newChildModel =
-                    Textfield.update cMsg user.state
-            in
-                ( { user | state = newChildModel }, Cmd.none )
+            ( { user | state = (Textfield.update cMsg user.state) }, Cmd.none )
 
         CountryMdl cMsg ->
-            let
-                newChildModel =
-                    Textfield.update cMsg user.country
-            in
-                ( { user | country = newChildModel }, Cmd.none )
+            ( { user | country = (Textfield.update cMsg user.country) }, Cmd.none )
 
         PremiumMdl cMsg ->
             let
