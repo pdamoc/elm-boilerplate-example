@@ -1,4 +1,4 @@
-# Boilerplate example
+# Boilerplate example for the case where you have many small components that are unavoidably stateful
 
 An exploration of the difference between an `elm-mdl` UI with `elm-parts` and one without. 
 
